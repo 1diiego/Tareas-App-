@@ -1,0 +1,34 @@
+export function ListaTareas() {
+  return (
+    <Fragment>
+      <div className="container m-5">
+        <h2>Aplicación de Listado de Tareas</h2>
+
+        <div className="input-group my-4">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Ingrese una tarea"
+          />
+          <button className="btn btn-success ms-1">Agregar</button>
+        </div>
+
+        <ul className="list-group">
+          <li className="list-group-item">Tarea de ejemplo 1</li>
+          <li className="list-group-item">Tarea de ejemplo 2</li>
+          <li className="list-group-item">Tarea de ejemplo 3</li>
+          <li className="list-group-item">Tarea importante (ejemplo)</li>
+        </ul>
+      </div>
+    </Fragment>
+  );
+
+  
+Crea inputs para título y descripción.
+
+Agrega un checkbox para “importante”.
+
+Haz un botón de agregar.
+
+Guarda el estado del formulario en React.
+Aquí ya deberías poder escribir datos en los campos y ver que el estado cambia.

@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+}
+
+.ContenedorNotas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 960px; /* 4 notas × 220px + 3 gaps × 20px = 940px, con algo de margen */
+    margin: 0 auto;
+}
+
+.nota {
+    position: relative;
+    flex: 0 0 220px;
+    width: 220px;
+    min-height: 220px;
+    padding: 20px;
+    background-color: blanchedalmond;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    
+}
+
+.importante {
+    background-color: red;
+}
+
+.nota .btn-danger {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: 2px solid black;
+}
+
+.colortitulo {
+    color: aliceblue;
+}
+
+.importantee {
+    color: aliceblue;
+}
+
+.nota:nth-child(odd) {
+    transform: rotate(-3deg);
+}
+
+.nota:nth-child(even) {
+    transform: rotate(3deg);
+}
